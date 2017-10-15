@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+    {% csrf_token %}
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/bootstrap-theme.min.css" %}">
+    <script src={% static "jquery-3.2.1.min.js"%}></script>
+    <script src={% static "register.js"%}></script>
+
+    <div class="container">
+        <h1>Registration Form</h1>
+        <div class="row">
+            <div class="col-md-2">
+                <label>First Name</label>
+            </div>
+            <div class="col-md-2">
+                <input type="text" id="first_name"></input>
+            </div>
+            <div class="col-md-8">
+                <label id="first_name_error" color="red"></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <label>Last Name</label>
+            </div>
+            <div class="col-md-2">
+                <input type="text" id="last_name"></input>
+            </div>
+            <div class="col-md-8">
+                <label id="last_name_error" color="red"></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <label>Address 1</label>
+            </div>
+            <div class="col-md-2">
+                <input type="text" id="address1"></input>
+            </div>
+            <div class="col-md-8">
+                <label id="address1_error" color="red"></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <label>Address 2</label>
+            </div>
+            <div class="col-md-2">
+                <input type="text" id="address2"></input>
+            </div>
+            <div class="col-md-8">
+                <label id="address2_error" color="red"></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <label>City</label>
+            </div>
+            <div class="col-md-2">
+                <input type="text" id="city"></input>
+            </div>
+            <div class="col-md-8">
+                <label id="city_error" color="red"></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <label>State</label>
+            </div>
+            <div class="col-md-2">
+                <input type="text" id="state"></input>
+            </div>
+            <div class="col-md-8">
+                <label id="state_error" color="red"></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <label>Zip</label>
+            </div>
+            <div class="col-md-2">
+                <input type="text" id="zip"></input>
+            </div>
+            <div class="col-md-8">
+                <label id="zip_error" color="red"></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <label>Country</label>
+            </div>
+            <div class="col-md-2">
+                <input type="text" id="country"></input>
+            </div>
+            <div class="col-md-8">
+                <label id="country_error" color="red"></label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+                <button type="button" id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+</html>
